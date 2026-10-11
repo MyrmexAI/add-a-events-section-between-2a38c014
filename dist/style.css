@@ -29,6 +29,7 @@ h1, h2, h3 {
 a { color: var(--blue-700); }
 
 .hero {
+  position: relative;
   background: var(--blue-900);
   color: var(--cream);
   text-align: center;
@@ -264,3 +265,28 @@ footer a { color: var(--cream); }
 .lightbox-close:focus-visible { outline: 3px solid var(--blue-100); outline-offset: 3px; }
 
 body.lightbox-open { overflow: hidden; }
+
+.lang-switch {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  border: 1px solid var(--blue-100);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.lang-btn {
+  background: transparent;
+  color: var(--blue-100);
+  border: 0;
+  padding: 0.35rem 0.8rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.lang-btn[aria-pressed="true"] { background: var(--cream); color: var(--blue-900); }
+.lang-btn:focus-visible { outline: 3px solid var(--blue-100); outline-offset: -3px; }

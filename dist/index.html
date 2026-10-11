@@ -9,125 +9,129 @@
 </head>
 <body>
   <header class="hero">
-    <p class="eyebrow">Bookshop &amp; Café · Lisbon</p>
+    <div class="lang-switch" role="group" data-i18n-aria-label="lang_group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="pt" lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <p class="eyebrow" data-i18n="eyebrow">Bookshop &amp; Café · Lisbon</p>
     <h1>Paper Boat</h1>
-    <p class="tagline">Find a book, pour a coffee, and let the afternoon drift.</p>
-    <a class="button" href="#visit">Visit us</a>
+    <p class="tagline" data-i18n="tagline">Find a book, pour a coffee, and let the afternoon drift.</p>
+    <a class="button" href="#visit" data-i18n="cta">Visit us</a>
   </header>
 
   <main>
     <section class="section" aria-labelledby="books-title">
-      <h2 id="books-title">On our shelf this month</h2>
+      <h2 id="books-title" data-i18n="books_title">On our shelf this month</h2>
       <ul class="books">
         <li class="book">
-          <h3>The Book of Disquiet</h3>
+          <h3 data-i18n="b1_title">The Book of Disquiet</h3>
           <p class="author">Fernando Pessoa</p>
-          <p>A Lisbon classic to read slowly, one fragment per coffee.</p>
+          <p data-i18n="b1_desc">A Lisbon classic to read slowly, one fragment per coffee.</p>
         </li>
         <li class="book">
-          <h3>Blindness</h3>
+          <h3 data-i18n="b2_title">Blindness</h3>
           <p class="author">José Saramago</p>
-          <p>A gripping, unforgettable parable that you will finish in one sitting.</p>
+          <p data-i18n="b2_desc">A gripping, unforgettable parable that you will finish in one sitting.</p>
         </li>
         <li class="book">
-          <h3>Night Train to Lisbon</h3>
+          <h3 data-i18n="b3_title">Night Train to Lisbon</h3>
           <p class="author">Pascal Mercier</p>
-          <p>A quiet adventure for anyone who has ever dreamed of starting over.</p>
+          <p data-i18n="b3_desc">A quiet adventure for anyone who has ever dreamed of starting over.</p>
         </li>
       </ul>
     </section>
 
     <section class="section events" aria-labelledby="events-title">
-      <h2 id="events-title">Events</h2>
+      <h2 id="events-title" data-i18n="events_title">Events</h2>
       <ul class="event-list">
         <li class="event">
-          <time class="event-date" datetime="2026-10-22">Thu 22 Oct</time>
+          <time class="event-date" datetime="2026-10-22" data-i18n="e1_date">Thu 22 Oct</time>
           <div>
-            <h3>Pessoa Reading Night</h3>
-            <p>Fragments read aloud in Portuguese and English, with a pot of coffee for every table.</p>
+            <h3 data-i18n="e1_title">Pessoa Reading Night</h3>
+            <p data-i18n="e1_desc">Fragments read aloud in Portuguese and English, with a pot of coffee for every table.</p>
           </div>
         </li>
         <li class="event">
-          <time class="event-date" datetime="2026-10-31">Sat 31 Oct</time>
+          <time class="event-date" datetime="2026-10-31" data-i18n="e2_date">Sat 31 Oct</time>
           <div>
-            <h3>Secondhand Book Swap</h3>
-            <p>Bring a book you have loved, take home one someone else did.</p>
+            <h3 data-i18n="e2_title">Secondhand Book Swap</h3>
+            <p data-i18n="e2_desc">Bring a book you have loved, take home one someone else did.</p>
           </div>
         </li>
         <li class="event">
-          <time class="event-date" datetime="2026-11-12">Thu 12 Nov</time>
+          <time class="event-date" datetime="2026-11-12" data-i18n="e3_date">Thu 12 Nov</time>
           <div>
-            <h3>Meet the Author: Lisbon in Letters</h3>
-            <p>A relaxed afternoon talk and signing with a local writer.</p>
+            <h3 data-i18n="e3_title">Meet the Author: Lisbon in Letters</h3>
+            <p data-i18n="e3_desc">A relaxed afternoon talk and signing with a local writer.</p>
           </div>
         </li>
       </ul>
     </section>
 
     <section class="section gallery" aria-labelledby="gallery-title">
-      <h2 id="gallery-title">Gallery</h2>
+      <h2 id="gallery-title" data-i18n="gallery_title">Gallery</h2>
       <ul class="gallery-grid">
         <li>
           <figure class="gallery-item">
-            <button type="button" class="gallery-thumb g1" aria-label="Open photo: Reading corner by the window"></button>
-            <figcaption>Reading corner by the window</figcaption>
+            <button type="button" class="gallery-thumb g1" data-i18n-aria-label="open_photo" data-i18n-arg="cap1" aria-label="Open photo: Reading corner by the window"></button>
+            <figcaption data-i18n="cap1">Reading corner by the window</figcaption>
           </figure>
         </li>
         <li>
           <figure class="gallery-item">
-            <button type="button" class="gallery-thumb g2" aria-label="Open photo: Fresh pastries on the counter"></button>
-            <figcaption>Fresh pastries on the counter</figcaption>
+            <button type="button" class="gallery-thumb g2" data-i18n-aria-label="open_photo" data-i18n-arg="cap2" aria-label="Open photo: Fresh pastries on the counter"></button>
+            <figcaption data-i18n="cap2">Fresh pastries on the counter</figcaption>
           </figure>
         </li>
         <li>
           <figure class="gallery-item">
-            <button type="button" class="gallery-thumb g3" aria-label="Open photo: The back shelves of secondhand books"></button>
-            <figcaption>The back shelves of secondhand books</figcaption>
+            <button type="button" class="gallery-thumb g3" data-i18n-aria-label="open_photo" data-i18n-arg="cap3" aria-label="Open photo: The back shelves of secondhand books"></button>
+            <figcaption data-i18n="cap3">The back shelves of secondhand books</figcaption>
           </figure>
         </li>
         <li>
           <figure class="gallery-item">
-            <button type="button" class="gallery-thumb g4" aria-label="Open photo: An evening reading night"></button>
-            <figcaption>An evening reading night</figcaption>
+            <button type="button" class="gallery-thumb g4" data-i18n-aria-label="open_photo" data-i18n-arg="cap4" aria-label="Open photo: An evening reading night"></button>
+            <figcaption data-i18n="cap4">An evening reading night</figcaption>
           </figure>
         </li>
         <li>
           <figure class="gallery-item">
-            <button type="button" class="gallery-thumb g5" aria-label="Open photo: Our stubborn espresso machine"></button>
-            <figcaption>Our stubborn espresso machine</figcaption>
+            <button type="button" class="gallery-thumb g5" data-i18n-aria-label="open_photo" data-i18n-arg="cap5" aria-label="Open photo: Our stubborn espresso machine"></button>
+            <figcaption data-i18n="cap5">Our stubborn espresso machine</figcaption>
           </figure>
         </li>
         <li>
           <figure class="gallery-item">
-            <button type="button" class="gallery-thumb g6" aria-label="Open photo: A rainy afternoon at Paper Boat"></button>
-            <figcaption>A rainy afternoon at Paper Boat</figcaption>
+            <button type="button" class="gallery-thumb g6" data-i18n-aria-label="open_photo" data-i18n-arg="cap6" aria-label="Open photo: A rainy afternoon at Paper Boat"></button>
+            <figcaption data-i18n="cap6">A rainy afternoon at Paper Boat</figcaption>
           </figure>
         </li>
       </ul>
     </section>
 
     <section class="section story" aria-labelledby="story-title">
-      <h2 id="story-title">Our story</h2>
-      <p>Paper Boat began with a small room, a few crates of secondhand books and a very stubborn espresso machine. We wanted a place where nobody rushes you: where you can browse, sit by the window and stay for as long as the chapter takes.</p>
-      <p>Today we stock new and used books in Portuguese, English and a few other languages, and bake something fresh every morning. Come in out of the rain, or the sun, and stay a while.</p>
+      <h2 id="story-title" data-i18n="story_title">Our story</h2>
+      <p data-i18n="story1">Paper Boat began with a small room, a few crates of secondhand books and a very stubborn espresso machine. We wanted a place where nobody rushes you: where you can browse, sit by the window and stay for as long as the chapter takes.</p>
+      <p data-i18n="story2">Today we stock new and used books in Portuguese, English and a few other languages, and bake something fresh every morning. Come in out of the rain, or the sun, and stay a while.</p>
     </section>
 
     <section class="section visit" id="visit" aria-labelledby="visit-title">
-      <h2 id="visit-title">Visit us</h2>
+      <h2 id="visit-title" data-i18n="visit_title">Visit us</h2>
       <div class="visit-grid">
         <div>
-          <h3>Opening hours</h3>
+          <h3 data-i18n="hours_title">Opening hours</h3>
           <table>
             <tbody>
-              <tr><th scope="row">Monday</th><td>Closed</td></tr>
-              <tr><th scope="row">Tuesday – Friday</th><td>09:00 – 19:00</td></tr>
-              <tr><th scope="row">Saturday</th><td>10:00 – 20:00</td></tr>
-              <tr><th scope="row">Sunday</th><td>10:00 – 17:00</td></tr>
+              <tr><th scope="row" data-i18n="mon">Monday</th><td data-i18n="closed">Closed</td></tr>
+              <tr><th scope="row" data-i18n="tue_fri">Tuesday – Friday</th><td>09:00 – 19:00</td></tr>
+              <tr><th scope="row" data-i18n="sat">Saturday</th><td>10:00 – 20:00</td></tr>
+              <tr><th scope="row" data-i18n="sun">Sunday</th><td>10:00 – 17:00</td></tr>
             </tbody>
           </table>
         </div>
         <div>
-          <h3>Address</h3>
+          <h3 data-i18n="address_title">Address</h3>
           <address>
             Paper Boat<br>
             Rua das Flores 42<br>
@@ -140,18 +144,19 @@
   </main>
 
   <footer>
-    <p>© 2026 Paper Boat · Lisbon</p>
-    <p><a href="https://www.instagram.com/paperboat.lisbon" rel="noopener noreferrer" target="_blank">Follow us on Instagram</a></p>
+    <p data-i18n="footer">© 2026 Paper Boat · Lisbon</p>
+    <p><a href="https://www.instagram.com/paperboat.lisbon" rel="noopener noreferrer" target="_blank" data-i18n="instagram">Follow us on Instagram</a></p>
   </footer>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" data-i18n-aria-label="viewer" aria-label="Photo viewer" hidden>
     <figure class="lightbox-figure">
       <div class="lightbox-image" id="lightbox-image"></div>
       <figcaption id="lightbox-caption"></figcaption>
     </figure>
-    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button type="button" class="lightbox-close" id="lightbox-close" data-i18n-aria-label="close" aria-label="Close">&times;</button>
   </div>
 
+  <script src="lang.js"></script>
   <script src="gallery.js"></script>
 </body>
 </html>

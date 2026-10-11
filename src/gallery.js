@@ -6,10 +6,14 @@
   var thumbs = document.querySelectorAll('.gallery-thumb');
   var opener = null;
 
+  function syncCaption() {
+    if (opener) caption.textContent = opener.parentNode.querySelector('figcaption').textContent;
+  }
+
   function open(thumb) {
     opener = thumb;
     image.className = 'lightbox-image ' + thumb.className.replace('gallery-thumb', '').trim();
-    caption.textContent = thumb.parentNode.querySelector('figcaption').textContent;
+    syncCaption();
     box.hidden = false;
     document.body.classList.add('lightbox-open');
     closeBtn.focus();
@@ -25,6 +29,8 @@
   Array.prototype.forEach.call(thumbs, function (thumb) {
     thumb.addEventListener('click', function () { open(thumb); });
   });
+
+  document.addEventListener('langchange', syncCaption);
 
   closeBtn.addEventListener('click', close);
   box.addEventListener('click', function (e) {
