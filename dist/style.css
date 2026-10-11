@@ -178,3 +178,89 @@ footer {
 
 footer p { margin: 0.25rem 0; }
 footer a { color: var(--cream); }
+
+.gallery-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+}
+
+.gallery-item { margin: 0; }
+
+.gallery-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 0;
+  border-radius: 6px;
+  padding: 0;
+  cursor: zoom-in;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-thumb:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(28, 58, 90, 0.25); }
+.gallery-thumb:focus-visible { outline: 3px solid var(--blue-700); outline-offset: 3px; }
+
+.gallery-item figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.g1 { background: linear-gradient(135deg, #2f5d8a, #dce9f3); }
+.g2 { background: linear-gradient(135deg, #e8b86d, #faf5e9); }
+.g3 { background: linear-gradient(160deg, #7a4a2b, #d9b48a); }
+.g4 { background: linear-gradient(135deg, #1c3a5a, #6a4c93); }
+.g5 { background: linear-gradient(135deg, #3b2a20, #c98b5a); }
+.g6 { background: linear-gradient(180deg, #8fa7bd, #dfe7ee); }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(15, 28, 43, 0.9);
+}
+
+.lightbox[hidden] { display: none; }
+
+.lightbox-figure {
+  margin: 0;
+  width: min(90vw, 48rem);
+  color: var(--cream);
+  text-align: center;
+}
+
+.lightbox-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  max-height: 75vh;
+  border-radius: 8px;
+}
+
+.lightbox-figure figcaption { margin-top: 0.75rem; font-size: 1.1rem; }
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--blue-900);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-close:focus-visible { outline: 3px solid var(--blue-100); outline-offset: 3px; }
+
+body.lightbox-open { overflow: hidden; }

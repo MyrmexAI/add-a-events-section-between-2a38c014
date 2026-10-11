@@ -64,6 +64,48 @@
       </ul>
     </section>
 
+    <section class="section gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Gallery</h2>
+      <ul class="gallery-grid">
+        <li>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-thumb g1" aria-label="Open photo: Reading corner by the window"></button>
+            <figcaption>Reading corner by the window</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-thumb g2" aria-label="Open photo: Fresh pastries on the counter"></button>
+            <figcaption>Fresh pastries on the counter</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-thumb g3" aria-label="Open photo: The back shelves of secondhand books"></button>
+            <figcaption>The back shelves of secondhand books</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-thumb g4" aria-label="Open photo: An evening reading night"></button>
+            <figcaption>An evening reading night</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-thumb g5" aria-label="Open photo: Our stubborn espresso machine"></button>
+            <figcaption>Our stubborn espresso machine</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="gallery-item">
+            <button type="button" class="gallery-thumb g6" aria-label="Open photo: A rainy afternoon at Paper Boat"></button>
+            <figcaption>A rainy afternoon at Paper Boat</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
     <section class="section story" aria-labelledby="story-title">
       <h2 id="story-title">Our story</h2>
       <p>Paper Boat began with a small room, a few crates of secondhand books and a very stubborn espresso machine. We wanted a place where nobody rushes you: where you can browse, sit by the window and stay for as long as the chapter takes.</p>
@@ -101,5 +143,15 @@
     <p>© 2026 Paper Boat · Lisbon</p>
     <p><a href="https://www.instagram.com/paperboat.lisbon" rel="noopener noreferrer" target="_blank">Follow us on Instagram</a></p>
   </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <figure class="lightbox-figure">
+      <div class="lightbox-image" id="lightbox-image"></div>
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+  </div>
+
+  <script src="gallery.js"></script>
 </body>
 </html>
