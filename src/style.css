@@ -103,6 +103,46 @@ a { color: var(--blue-700); }
 .book .author { margin: 0 0 0.75rem; color: var(--blue-700); font-weight: 600; }
 .book p:last-child { margin: 0; }
 
+.events {
+  max-width: 44rem;
+  padding-top: 0;
+}
+
+.event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.event {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--cream-dark);
+  border-left: 4px solid var(--blue-700);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+}
+
+.event-date {
+  flex: 0 0 5.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  color: var(--blue-700);
+  line-height: 1.3;
+}
+
+.event h3 { margin: 0 0 0.25rem; font-size: 1.15rem; }
+.event p { margin: 0; }
+
+@media (max-width: 30rem) {
+  .event { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .event-date { flex-basis: auto; }
+}
+
 .story {
   max-width: 40rem;
   text-align: center;
